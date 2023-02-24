@@ -13,7 +13,7 @@ app.use('/', (req, res, next) => {
 })
 // IMPORTAR ROTAS
 
-var route = require(path.join(__dirname, 'routes', 'crud.js'))
+var route = require(path.join(__dirname, 'routes', 'crud', 'crud.js'))
 
 app.use('/api/v1', route)
 
