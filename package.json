@@ -2,9 +2,9 @@
   "name": "projeto-01",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "test": "nodemon src/main.js --ignore=*.txt"
+    "test": "nodemon src/index.js --ignore=*.txt"
   },
   "keywords": [],
   "author": "",
