@@ -1,5 +1,5 @@
 @ECHO OFF
 
-echo "Inicializando servidor..."
+echo Inicializando servidor...
 
 npm run test

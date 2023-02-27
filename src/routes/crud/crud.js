@@ -11,7 +11,10 @@ route.use('/', (req, res, next) => {
     next();
 })
 
+// ROUTES
+
 var crud = require("./crudFunctions.js")
+
 route.get('/', (req, res) => res.status(200).json({message: "it's works!"}))
 route.post('/register', crud.registrar) // CRIAR USUARIO
 route.post('/login', crud.logar) // LOGAR USUARIO

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon src/index.js --ignore=*.txt"
+    "test": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,8 @@
     "ts-node": "^10.9.1"
   },
   "dependencies": {
+    "debug": "^4.3.4",
+    "mongoose": "^6.10.0",
     "nodemon": "^2.0.20"
   }
 }

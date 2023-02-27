@@ -1,23 +1,26 @@
 // MODULOS
-var express = require("express")
-var path = require("path")
-var dotenv = require("dotenv")
+var dotenv = require("dotenv");
+dotenv.config();
 
-dotenv.config()
-//
+// APP
+var app = require("./app.js");
 
-var app = express();
-app.use('/', (req, res, next) => {
-    res.removeHeader('X-Powered-By')
-    next()
-})
+// MONGODB
+var db = require("./mongo/db");
+
 // IMPORTAR ROTAS
 
-var route = require(path.join(__dirname, 'routes', 'crud', 'crud.js'))
+var route = require('./routes/crud/crud.js');
 
-app.use('/api/v1', route)
+app.use('/api/v1', route);
 
-app.get('/', (req, res) => res.send('OK'))
-var [port, host] = [process.env.PORT, process.env.HOST]
+app.get('/', (req, res) => res.send('OK'));
 
-app.listen(port, host, () => console.log('Servidor inicializado na porta: ' + port))
+var [port, host] = [process.env.PORT, process.env.HOST];
+
+db.then(() => app.listen(port, host, () => {
+    console.log('[+] SERVIDOR INICIADO NA PORTA:', port)
+    console.log('[+] DATABASE CONECTADA EM', process.env['DB_NAME'])
+})).catch(err => {
+    console.log(err)
+})
