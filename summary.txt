@@ -1,0 +1,2 @@
+Configure app/app.js to listen and connect to MongoDB
+Create MongoDB models
