@@ -1,11 +1,12 @@
 var express = require("express");
 var debug = require("debug")("app:routes"); // DEBUG LINE
-var crud = require("./crud");
+var crud = require("./middlewares/crud");
 var Route = express.Router();
 
 Route.post('/register', crud.register);
-Route.post('/login', crud.register);
-Route.put('/update/:id', crud.register);
-Route.delete('/delete-profile/:id', crud.register);
-Route.get('/info/:id', (req, res) => crud.info);
+Route.post('/login', crud.login);
+Route.put('/update', crud.update);
+Route.delete('/delete-profile', crud.delete);
+Route.get('/info', crud.info);
+
 module.exports = Route

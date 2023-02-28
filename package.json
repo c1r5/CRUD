@@ -1,10 +1,13 @@
 {
+  "commands": {
+    "DEBUG ALL": "DEBUG=* node src/index"
+  },
   "name": "projeto-01",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon DEBUG=* src/app/app.js"
+    "test": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",

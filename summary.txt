@@ -1,2 +1,17 @@
 Configure app/app.js to listen and connect to MongoDB
 Create MongoDB models
+
+/api/user/register
+/api/user/login
+/api/user/update/ (Authorization)
+/api/user/delete-profile/ ( Authorization )
+/api/user/info/ (Authorization)
+
+Implement MongoDB Middlewares
+
+1. Register new user
+2. Find User
+3. Get user infos
+4. Authenticate user
+5. Authorize user
+
