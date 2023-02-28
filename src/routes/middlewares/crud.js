@@ -4,7 +4,8 @@ var debug = require("debug")("app:crud") // DEBUG LINE
 var {User} = path.resolve(__dirname, 'mongo', 'models.js')
 module.exports = {
     register: function (req, res) {
-        res.send('OK')
+        debug(req.body)
+        res.send('ok')
     },
     login: function (req, res) {},
     update: function (req, res) {},
