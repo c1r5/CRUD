@@ -10,7 +10,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
