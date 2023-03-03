@@ -38,7 +38,7 @@ module.exports = {
     info: function (req, res) {},
 }
 var findUser = (credentials) => new Promise((resolve, reject) => {
-    User.findOne({username:credentials['username'/]}).where('password').eq(credentials['password'])
+    User.findOne({username:credentials['username']}).where('password').eq(credentials['password'])
     .exec(function (err, userdata) {
         if (!err) {
             userdata = {
