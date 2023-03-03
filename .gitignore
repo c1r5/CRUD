@@ -3,4 +3,4 @@
 **/.vscode/*
 **/src/private/*
 **/*.txt
-**/private
+**/private/*
