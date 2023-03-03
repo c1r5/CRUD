@@ -1,0 +1,5 @@
+[
+    "/api/user/delete",
+    "/api/user/update",
+    "/api/user/info"
+]
