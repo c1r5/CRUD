@@ -1,4 +1,4 @@
-# MEU PRIMEIRO REPOSITÓRIO
+# MEU PRIMEIRO PROJETO
 
 Olá, bem vindo ao meu GitHub :)
 
