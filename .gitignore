@@ -2,4 +2,4 @@
 **/.env
 **/.vscode/*
 **/src/private/*
-**.txt
+**/*.txt
