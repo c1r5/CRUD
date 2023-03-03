@@ -1,4 +1,4 @@
-# MEU PRIMEIRO PROJETO
+# MEU PRIMEIRO PROJETO PÚBLICO
 
 Olá, bem vindo ao meu GitHub :)
 
